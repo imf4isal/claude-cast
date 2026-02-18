@@ -1,0 +1,32 @@
+{
+  "name": "claude-cast",
+  "version": "0.1.0",
+  "description": "Share Claude Code sessions via GitHub Gist",
+  "type": "module",
+  "bin": {
+    "claude-cast": "./dist/bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx bin/cli.ts"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "session",
+    "share",
+    "gist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^8.2.1",
+    "commander": "^14.0.3",
+    "marked": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.2",
+    "@types/node": "^25.2.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

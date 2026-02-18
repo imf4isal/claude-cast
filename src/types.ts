@@ -1,4 +1,4 @@
-/** Raw JSONL record as stored by Claude Code */
+// raw JSONL record as stored by Claude Code
 export interface RawRecord {
   type: string;
   uuid: string;
@@ -48,7 +48,7 @@ export interface RawToolResultContent {
   text?: string;
 }
 
-/** Normalized content items for output */
+// normalized content items
 export type ContentItem =
   | { type: "text"; text: string }
   | { type: "thinking"; text: string }
